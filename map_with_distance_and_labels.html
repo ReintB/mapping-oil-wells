@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fc993491892775f0ee3cffa86d0ff8b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fc993491892775f0ee3cffa86d0ff8b8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fc993491892775f0ee3cffa86d0ff8b8 = L.map(
+                "map_fc993491892775f0ee3cffa86d0ff8b8",
+                {
+                    center: [0.833333, 117.828333],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4e1ec87f8717016f5b6e5715489636c7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4e1ec87f8717016f5b6e5715489636c7.addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+            var marker_de98d5db7cafe9138e6f5febc66531a0 = L.marker(
+                [0.833333, 117.828333],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_7b06b0f978fb1197ce34728225579361 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08ee6e06f567410310c29b2b79287d55 = $(`<div id="html_08ee6e06f567410310c29b2b79287d55" style="width: 100.0%; height: 100.0%;">Titik 1<br>Lat: 0.833333<br>Lon: 117.828333</div>`)[0];
+                popup_7b06b0f978fb1197ce34728225579361.setContent(html_08ee6e06f567410310c29b2b79287d55);
+            
+        
+
+        marker_de98d5db7cafe9138e6f5febc66531a0.bindPopup(popup_7b06b0f978fb1197ce34728225579361)
+        ;
+
+        
+    
+    
+            marker_de98d5db7cafe9138e6f5febc66531a0.bindTooltip(
+                `<div>
+                     Titik 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e55a1d60f593512e7b47e221b0fddb8d = L.marker(
+                [0.833333, 117.733333],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_286cfd990ff67005ec5546a36e3e3f49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c463a63fb644ea1185229f75aac34ee = $(`<div id="html_9c463a63fb644ea1185229f75aac34ee" style="width: 100.0%; height: 100.0%;">Titik 2<br>Lat: 0.833333<br>Lon: 117.733333</div>`)[0];
+                popup_286cfd990ff67005ec5546a36e3e3f49.setContent(html_9c463a63fb644ea1185229f75aac34ee);
+            
+        
+
+        marker_e55a1d60f593512e7b47e221b0fddb8d.bindPopup(popup_286cfd990ff67005ec5546a36e3e3f49)
+        ;
+
+        
+    
+    
+            marker_e55a1d60f593512e7b47e221b0fddb8d.bindTooltip(
+                `<div>
+                     Titik 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b56c1e42d6c6acc51cb1e0d050a85148 = L.marker(
+                [1.278333, 117.733333],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_fe0ff3b58e777d01f1e32fad72319baa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe0b2a2eb9c9534cf24712939239a28e = $(`<div id="html_fe0b2a2eb9c9534cf24712939239a28e" style="width: 100.0%; height: 100.0%;">Titik 3<br>Lat: 1.278333<br>Lon: 117.733333</div>`)[0];
+                popup_fe0ff3b58e777d01f1e32fad72319baa.setContent(html_fe0b2a2eb9c9534cf24712939239a28e);
+            
+        
+
+        marker_b56c1e42d6c6acc51cb1e0d050a85148.bindPopup(popup_fe0ff3b58e777d01f1e32fad72319baa)
+        ;
+
+        
+    
+    
+            marker_b56c1e42d6c6acc51cb1e0d050a85148.bindTooltip(
+                `<div>
+                     Titik 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6d934ada2ba994b40ec001d5f553225b = L.marker(
+                [0.5, 117.828333],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_53272097f6d4aa8ee16f9ebffe1389de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d33960a8f0a19bf50975eb60bdc6a1f = $(`<div id="html_0d33960a8f0a19bf50975eb60bdc6a1f" style="width: 100.0%; height: 100.0%;">Titik 4<br>Lat: 0.500000<br>Lon: 117.828333</div>`)[0];
+                popup_53272097f6d4aa8ee16f9ebffe1389de.setContent(html_0d33960a8f0a19bf50975eb60bdc6a1f);
+            
+        
+
+        marker_6d934ada2ba994b40ec001d5f553225b.bindPopup(popup_53272097f6d4aa8ee16f9ebffe1389de)
+        ;
+
+        
+    
+    
+            marker_6d934ada2ba994b40ec001d5f553225b.bindTooltip(
+                `<div>
+                     Titik 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8b1f523eebb8e60af5c00f2a6730eaef = L.marker(
+                [0.5, 118.195],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_60057739013bab2e4f922384363d5aac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ff7fee9d76d6f4fa61a63456d4a7000 = $(`<div id="html_7ff7fee9d76d6f4fa61a63456d4a7000" style="width: 100.0%; height: 100.0%;">Titik 5<br>Lat: 0.500000<br>Lon: 118.195000</div>`)[0];
+                popup_60057739013bab2e4f922384363d5aac.setContent(html_7ff7fee9d76d6f4fa61a63456d4a7000);
+            
+        
+
+        marker_8b1f523eebb8e60af5c00f2a6730eaef.bindPopup(popup_60057739013bab2e4f922384363d5aac)
+        ;
+
+        
+    
+    
+            marker_8b1f523eebb8e60af5c00f2a6730eaef.bindTooltip(
+                `<div>
+                     Titik 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1121e16655b86ba49cd9bebff18c3545 = L.marker(
+                [0.666667, 118.2],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_231abd8b480854724dd077d3303ad423 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c43d4d10e57138e48b0951ac595982e = $(`<div id="html_0c43d4d10e57138e48b0951ac595982e" style="width: 100.0%; height: 100.0%;">Titik 6<br>Lat: 0.666667<br>Lon: 118.200000</div>`)[0];
+                popup_231abd8b480854724dd077d3303ad423.setContent(html_0c43d4d10e57138e48b0951ac595982e);
+            
+        
+
+        marker_1121e16655b86ba49cd9bebff18c3545.bindPopup(popup_231abd8b480854724dd077d3303ad423)
+        ;
+
+        
+    
+    
+            marker_1121e16655b86ba49cd9bebff18c3545.bindTooltip(
+                `<div>
+                     Titik 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c83b4cae6a2a1550caf649bb0c2ce548 = L.marker(
+                [0.666667, 118.833333],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_98dd7be2fb23b91ce7a56750f7941203 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1af5564a0506af868125f69f6ddb9b63 = $(`<div id="html_1af5564a0506af868125f69f6ddb9b63" style="width: 100.0%; height: 100.0%;">Titik 7<br>Lat: 0.666667<br>Lon: 118.833333</div>`)[0];
+                popup_98dd7be2fb23b91ce7a56750f7941203.setContent(html_1af5564a0506af868125f69f6ddb9b63);
+            
+        
+
+        marker_c83b4cae6a2a1550caf649bb0c2ce548.bindPopup(popup_98dd7be2fb23b91ce7a56750f7941203)
+        ;
+
+        
+    
+    
+            marker_c83b4cae6a2a1550caf649bb0c2ce548.bindTooltip(
+                `<div>
+                     Titik 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1f53711d04d9b49ff078be704d38f77b = L.marker(
+                [1.0, 118.833333],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_894f95fe4d43403fd4816078d29dc454 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1a1b76d3ce44db745d4782b75473252 = $(`<div id="html_c1a1b76d3ce44db745d4782b75473252" style="width: 100.0%; height: 100.0%;">Titik 8<br>Lat: 1.000000<br>Lon: 118.833333</div>`)[0];
+                popup_894f95fe4d43403fd4816078d29dc454.setContent(html_c1a1b76d3ce44db745d4782b75473252);
+            
+        
+
+        marker_1f53711d04d9b49ff078be704d38f77b.bindPopup(popup_894f95fe4d43403fd4816078d29dc454)
+        ;
+
+        
+    
+    
+            marker_1f53711d04d9b49ff078be704d38f77b.bindTooltip(
+                `<div>
+                     Titik 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_77eafc42a7108723f10425445ac89b9d = L.marker(
+                [1.03, 118.19],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_f80ad770caeffe570b3877c199cc47ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6df7e80d14f476e35c174e20df45513f = $(`<div id="html_6df7e80d14f476e35c174e20df45513f" style="width: 100.0%; height: 100.0%;">Titik 9<br>Lat: 1.030000<br>Lon: 118.190000</div>`)[0];
+                popup_f80ad770caeffe570b3877c199cc47ea.setContent(html_6df7e80d14f476e35c174e20df45513f);
+            
+        
+
+        marker_77eafc42a7108723f10425445ac89b9d.bindPopup(popup_f80ad770caeffe570b3877c199cc47ea)
+        ;
+
+        
+    
+    
+            marker_77eafc42a7108723f10425445ac89b9d.bindTooltip(
+                `<div>
+                     Titik 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_23ec55ffe5e5ead04dd23eb5d10a3553 = L.polyline(
+                [[0.833333, 117.828333], [0.833333, 117.733333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_f67cdfe132049aebee0468ca18564d5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43ba5bf0ece4d955062034bf10f0f6f0 = $(`<div id="html_43ba5bf0ece4d955062034bf10f0f6f0" style="width: 100.0%; height: 100.0%;">10.57 km</div>`)[0];
+                popup_f67cdfe132049aebee0468ca18564d5f.setContent(html_43ba5bf0ece4d955062034bf10f0f6f0);
+            
+        
+
+        poly_line_23ec55ffe5e5ead04dd23eb5d10a3553.bindPopup(popup_f67cdfe132049aebee0468ca18564d5f)
+        ;
+
+        
+    
+    
+            poly_line_23ec55ffe5e5ead04dd23eb5d10a3553.bindTooltip(
+                `<div>
+                     Jarak Titik 1 → 2: 10.57 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_46d558ba2fe654c4956339be6748d3d1 = L.marker(
+                [0.833333, 117.780833],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+            var div_icon_e0b7b957515a0fa36afcd2f89099d642 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12px; color: darkred;\"\u003e10.57 km \u2192\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_46d558ba2fe654c4956339be6748d3d1.setIcon(div_icon_e0b7b957515a0fa36afcd2f89099d642);
+            
+    
+            var poly_line_a1153b7beed1be752445f7b9456c9b37 = L.polyline(
+                [[0.833333, 117.733333], [1.278333, 117.733333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_6a56901282aaf579f622a7fd0e3c199f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5e17f4df452d73b17af438c93b3b942 = $(`<div id="html_d5e17f4df452d73b17af438c93b3b942" style="width: 100.0%; height: 100.0%;">49.21 km</div>`)[0];
+                popup_6a56901282aaf579f622a7fd0e3c199f.setContent(html_d5e17f4df452d73b17af438c93b3b942);
+            
+        
+
+        poly_line_a1153b7beed1be752445f7b9456c9b37.bindPopup(popup_6a56901282aaf579f622a7fd0e3c199f)
+        ;
+
+        
+    
+    
+            poly_line_a1153b7beed1be752445f7b9456c9b37.bindTooltip(
+                `<div>
+                     Jarak Titik 2 → 3: 49.21 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8f2621c10b0ddf4a24c7da4bef3f5863 = L.marker(
+                [1.055833, 117.733333],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+            var div_icon_93428f25fdb0df57b552741a95d5521c = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12px; color: darkred;\"\u003e49.21 km \u2192\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_8f2621c10b0ddf4a24c7da4bef3f5863.setIcon(div_icon_93428f25fdb0df57b552741a95d5521c);
+            
+    
+            var poly_line_ce73c53152ea1ac32637298db580f522 = L.polyline(
+                [[1.278333, 117.733333], [0.5, 117.828333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_935b2bc6f85146b650b988fc4fc09e08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb580e4b4dc31f3e96d906ab53a00bcd = $(`<div id="html_cb580e4b4dc31f3e96d906ab53a00bcd" style="width: 100.0%; height: 100.0%;">86.71 km</div>`)[0];
+                popup_935b2bc6f85146b650b988fc4fc09e08.setContent(html_cb580e4b4dc31f3e96d906ab53a00bcd);
+            
+        
+
+        poly_line_ce73c53152ea1ac32637298db580f522.bindPopup(popup_935b2bc6f85146b650b988fc4fc09e08)
+        ;
+
+        
+    
+    
+            poly_line_ce73c53152ea1ac32637298db580f522.bindTooltip(
+                `<div>
+                     Jarak Titik 3 → 4: 86.71 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_274ab9c1ec8ba7b16d53e04a7088656b = L.marker(
+                [0.8891665, 117.780833],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+            var div_icon_d62b48b87700823e7c34db6d6742a4ba = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12px; color: darkred;\"\u003e86.71 km \u2192\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_274ab9c1ec8ba7b16d53e04a7088656b.setIcon(div_icon_d62b48b87700823e7c34db6d6742a4ba);
+            
+    
+            var poly_line_f30f39005d9b20ce89fa98fbe20391b1 = L.polyline(
+                [[0.5, 117.828333], [0.5, 118.195]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_ade936d50c93aef80711a08d37b3e90e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99b637cbff5e7ee2c11bb4d6f6ffc493 = $(`<div id="html_99b637cbff5e7ee2c11bb4d6f6ffc493" style="width: 100.0%; height: 100.0%;">40.82 km</div>`)[0];
+                popup_ade936d50c93aef80711a08d37b3e90e.setContent(html_99b637cbff5e7ee2c11bb4d6f6ffc493);
+            
+        
+
+        poly_line_f30f39005d9b20ce89fa98fbe20391b1.bindPopup(popup_ade936d50c93aef80711a08d37b3e90e)
+        ;
+
+        
+    
+    
+            poly_line_f30f39005d9b20ce89fa98fbe20391b1.bindTooltip(
+                `<div>
+                     Jarak Titik 4 → 5: 40.82 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9bc468395a2275585d386853c6f582c9 = L.marker(
+                [0.5, 118.01166649999999],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+            var div_icon_4b871f64a55a9589d6ca5f25f4e3e25d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12px; color: darkred;\"\u003e40.82 km \u2192\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_9bc468395a2275585d386853c6f582c9.setIcon(div_icon_4b871f64a55a9589d6ca5f25f4e3e25d);
+            
+    
+            var poly_line_70f3fe63e9f15062e3ac965b0fcab71c = L.polyline(
+                [[0.5, 118.195], [0.666667, 118.2]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_34ef1c57579f6edce54e4005a309c269 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_873efdd7eb3bfc4a8268ea6163890668 = $(`<div id="html_873efdd7eb3bfc4a8268ea6163890668" style="width: 100.0%; height: 100.0%;">18.44 km</div>`)[0];
+                popup_34ef1c57579f6edce54e4005a309c269.setContent(html_873efdd7eb3bfc4a8268ea6163890668);
+            
+        
+
+        poly_line_70f3fe63e9f15062e3ac965b0fcab71c.bindPopup(popup_34ef1c57579f6edce54e4005a309c269)
+        ;
+
+        
+    
+    
+            poly_line_70f3fe63e9f15062e3ac965b0fcab71c.bindTooltip(
+                `<div>
+                     Jarak Titik 5 → 6: 18.44 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_290c36e9498f8bd10028811c62c3d352 = L.marker(
+                [0.5833335, 118.19749999999999],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+            var div_icon_82e50083cb331cba5903c008ce900935 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12px; color: darkred;\"\u003e18.44 km \u2192\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_290c36e9498f8bd10028811c62c3d352.setIcon(div_icon_82e50083cb331cba5903c008ce900935);
+            
+    
+            var poly_line_b36d77baae5bedaba1898de2f054f430 = L.polyline(
+                [[0.666667, 118.2], [0.666667, 118.833333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_b3a9d9340588386ce5a9c40082dc4b35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25773e8a7ce58b9842bc94521312f05c = $(`<div id="html_25773e8a7ce58b9842bc94521312f05c" style="width: 100.0%; height: 100.0%;">70.50 km</div>`)[0];
+                popup_b3a9d9340588386ce5a9c40082dc4b35.setContent(html_25773e8a7ce58b9842bc94521312f05c);
+            
+        
+
+        poly_line_b36d77baae5bedaba1898de2f054f430.bindPopup(popup_b3a9d9340588386ce5a9c40082dc4b35)
+        ;
+
+        
+    
+    
+            poly_line_b36d77baae5bedaba1898de2f054f430.bindTooltip(
+                `<div>
+                     Jarak Titik 6 → 7: 70.50 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_df44b09ddb9d29cc6ca56f2738622443 = L.marker(
+                [0.666667, 118.5166665],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+            var div_icon_085c7accfa3a37ebf40b8e0a5be60e8b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12px; color: darkred;\"\u003e70.50 km \u2192\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_df44b09ddb9d29cc6ca56f2738622443.setIcon(div_icon_085c7accfa3a37ebf40b8e0a5be60e8b);
+            
+    
+            var poly_line_55943899f7be9ff8741b558be175e6d6 = L.polyline(
+                [[0.666667, 118.833333], [1.0, 118.833333]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_97c423885b6313eeff98477ab0db5364 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5d3f376f7de171ac0ac6169e39fd070 = $(`<div id="html_f5d3f376f7de171ac0ac6169e39fd070" style="width: 100.0%; height: 100.0%;">36.86 km</div>`)[0];
+                popup_97c423885b6313eeff98477ab0db5364.setContent(html_f5d3f376f7de171ac0ac6169e39fd070);
+            
+        
+
+        poly_line_55943899f7be9ff8741b558be175e6d6.bindPopup(popup_97c423885b6313eeff98477ab0db5364)
+        ;
+
+        
+    
+    
+            poly_line_55943899f7be9ff8741b558be175e6d6.bindTooltip(
+                `<div>
+                     Jarak Titik 7 → 8: 36.86 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a4602e0bb7bc939aa96ae34e42a0855c = L.marker(
+                [0.8333335, 118.833333],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+            var div_icon_260eb44069fea3c17514d543e5e03407 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12px; color: darkred;\"\u003e36.86 km \u2192\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_a4602e0bb7bc939aa96ae34e42a0855c.setIcon(div_icon_260eb44069fea3c17514d543e5e03407);
+            
+    
+            var poly_line_dd25a8f6be325d2cf95c97df4e15a5db = L.polyline(
+                [[1.0, 118.833333], [1.03, 118.19]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+        var popup_8c680a5253d5d648ca329826e99c01bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_858a2299c9517d8f623a3ddfff7fa75b = $(`<div id="html_858a2299c9517d8f623a3ddfff7fa75b" style="width: 100.0%; height: 100.0%;">71.68 km</div>`)[0];
+                popup_8c680a5253d5d648ca329826e99c01bc.setContent(html_858a2299c9517d8f623a3ddfff7fa75b);
+            
+        
+
+        poly_line_dd25a8f6be325d2cf95c97df4e15a5db.bindPopup(popup_8c680a5253d5d648ca329826e99c01bc)
+        ;
+
+        
+    
+    
+            poly_line_dd25a8f6be325d2cf95c97df4e15a5db.bindTooltip(
+                `<div>
+                     Jarak Titik 8 → 9: 71.68 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_91e4bfe8b90ebc8a27b88bb321362c9a = L.marker(
+                [1.0150000000000001, 118.51166649999999],
+                {
+}
+            ).addTo(map_fc993491892775f0ee3cffa86d0ff8b8);
+        
+    
+            var div_icon_54f3ab641401c367112c5de944868882 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12px; color: darkred;\"\u003e71.68 km \u2192\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_91e4bfe8b90ebc8a27b88bb321362c9a.setIcon(div_icon_54f3ab641401c367112c5de944868882);
+            
+</script>
+</html>
